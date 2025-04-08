@@ -16,7 +16,7 @@ Since [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filede
 ![showcase2](./Media/showcase2.gif)
 
 ## How to use:
-1. Go to the Steam Workshop and subscribe to or download this mod from release page.
+1. Go to the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3460251810) and subscribe to or download this mod from [release page](https://github.com/emoryoakley/GeothermalPowerExtendersCompatibilityPack/releases).
 2. Enable this mod in the game (Must be loaded after [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885).). 
 3. Go to the mod settings to configure the geothermal generator you want to support and whether it can be constructed diagonally.
 4. Just like using [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885) normally.
