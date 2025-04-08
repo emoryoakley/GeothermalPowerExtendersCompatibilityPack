@@ -5,7 +5,7 @@
 [繁體中文說明](./README.zh.md) | [English README](./README.md)
 
 ## 簡介：
-這是一個改善 [Geothermal Power Extender](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885) 相容性的模組。現在，您可以選擇在其他模組提供的地熱發電機旁建造電力延伸器。還可以允許 Power Extender 建造在地熱發電機的對角方向。
+這是一個改善 [Geothermal Power Extender](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885) 相容性的模組。現在，您可以選擇在其他模組提供的地熱發電機旁建造Power Extender。還可以允許 Power Extender 建造在地熱發電機的對角方向。
 
 ![showcase1](./Media/showcase1.gif)
 
@@ -16,7 +16,7 @@
 ![showcase2](./Media/showcase2.gif)
 
 ## 如何使用：
-1. 前往 Steam 工作坊，訂閱此模組或從發布頁面下載。
+1. 前往 [Steam 工作坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3460251810)，訂閱此模組或從 [release page](https://github.com/emoryoakley/GeothermalPowerExtendersCompatibilityPack/releases) 下載。
 2. 在遊戲中啟用此模組（必須在 [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885) 之後載入）。
 3. 前往模組設置，設定您想支援的地熱發電機，以及是否允許建造在對角方向。
 4. 像平常使用 [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885) 一樣使用此模組。
@@ -30,9 +30,9 @@
 
 ## 相容性：
 - 已測試以下模組，均與本模組相容：
-    - 核心（原版）
+    - Core（原版地熱發電機）
     - [Higher Power](https://steamcommunity.com/sharedfiles/filedetails/?id=1409449372)
-    - [更小的地熱發電機](https://steamcommunity.com/sharedfiles/filedetails/?id=3456671049)
+    - [Smaller Geothermal Generator (更小的地熱發電機)](https://steamcommunity.com/sharedfiles/filedetails/?id=3456671049)
     - [[sd] Advanced Powergeneration (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2079579039)
     - [Advanced Power Plus](https://steamcommunity.com/workshop/filedetails/?id=2032409628)
     - [Vanilla Factions Expanded - Ancients](https://steamcommunity.com/workshop/filedetails/?id=2654846754)
