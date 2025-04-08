@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace" MayRequire="silkcircuit.geothermalpowerextender">
+                <xpath>Defs/ThingDef[defName="GeothermalPowerExtender"]/placeWorkers</xpath>
+                <value>
+                    <placeWorkers>
+                        <li>GeothermalPowerExtendersCompatibilityPack.PlaceWorker_NextToGeothermalGenerator</li>
+                    </placeWorkers>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

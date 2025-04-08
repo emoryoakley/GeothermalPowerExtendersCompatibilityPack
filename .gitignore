@@ -1,0 +1,49 @@
+# 忽略 Visual Studio 相關檔案
+.vs/
+*.user
+*.suo
+*.cache
+*.userosscache
+*.sln.docstates
+
+# 忽略編譯輸出的檔案
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.log
+*.lib
+
+# 保留 Assemblies/ 和 Source/lib/ 目錄下的 dll 檔案
+!Source/lib/*.dll
+!Assemblies/*.dll
+
+# 忽略 NuGet 相關檔案
+*.nupkg
+packages/
+.nuget/
+
+# 忽略本機環境相關的配置檔案
+*.ide
+.idea/
+*.vsconfig
+
+# 忽略 Windows 系統產生的檔案
+Thumbs.db
+Desktop.ini
+
+# 忽略 macOS 系統產生的檔案
+.DS_Store
+
+# 忽略 Rider 或其他 JetBrains IDE 的配置檔案
+.idea/
+*.idea/
+
+# 忽略發布檔案
+*.publish/
+publish/

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>地热扩展器兼容性扩展包</GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>查询你想要支持的发电机:(可输入建筑物部分名称或是模组部分名称)</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>查询</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>全部选择</GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>全部取消</GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.ExpandAll.Button>全部展开</GeothermalPowerExtendersCompatibilityPack.ModSetting.ExpandAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.CollapseAll.Button>全部收缩</GeothermalPowerExtendersCompatibilityPack.ModSetting.CollapseAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Counter.Label>经查询，在 {0} 个模组中，总共找到 {1} 款可支持的发电机。</GeothermalPowerExtendersCompatibilityPack.ModSetting.Counter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Label>是否可以斜角摆放?</GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Tooltip>如果打勾，地热扩展器可以放在发电机的相邻与斜角位置；如果取消，地热扩展器只能放在相邻位置。</GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Tooltip>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.List.GroupLabel>模组名称: {0}</GeothermalPowerExtendersCompatibilityPack.ModSetting.List.GroupLabel>
+    <GeothermalPowerExtendersCompatibilityPack.PlaceWorker.Warning.MustPlaceExtenderNextToGenerator>地热扩展器必须放置在地热发电机旁边。</GeothermalPowerExtendersCompatibilityPack.PlaceWorker.Warning.MustPlaceExtenderNextToGenerator>
+</LanguageData>

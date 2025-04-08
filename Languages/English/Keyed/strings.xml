@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>Geothermal Extenders Compatibility Pack</GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>Search for the generator you want to support: (you can enter part of the building name or the mod name)</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>Search</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>Select All</GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>Deselect All</GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.ExpandAll.Button>Expand All</GeothermalPowerExtendersCompatibilityPack.ModSetting.ExpandAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.CollapseAll.Button>Collapse All</GeothermalPowerExtendersCompatibilityPack.ModSetting.CollapseAll.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Counter.Label>Based on your search, {1} generators were found across {0} mods.</GeothermalPowerExtendersCompatibilityPack.ModSetting.Counter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Label>Can it be constructed diagonally?</GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Tooltip>If checked, the geothermal extender can be placed adjacent or diagonally to the generator; if unchecked, it can only be placed adjacent to it.</GeothermalPowerExtendersCompatibilityPack.ModSetting.Adjacent.CheckBox.Tooltip>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.List.GroupLabel>Mod Name: {0}</GeothermalPowerExtendersCompatibilityPack.ModSetting.List.GroupLabel>
+    <GeothermalPowerExtendersCompatibilityPack.PlaceWorker.Warning.MustPlaceExtenderNextToGenerator>The geothermal extender must be placed next to the geothermal generator.</GeothermalPowerExtendersCompatibilityPack.PlaceWorker.Warning.MustPlaceExtenderNextToGenerator>
+</LanguageData>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Geothermal Power Extender Compatibility Pack</name>
+    <author>Emoryoakley (Exiler)</author>
+    <modVersion>1.5.20250408</modVersion>
+    <description>[h1][b]Mod Name: Geothermal Power Extender Compatibility Pack[/b][/h1]
+[h2][i]Latest Version: 1.5.20250408[/i][/h2]
+
+[i]If the mod isn’t auto-updated, please resubscribe to the mod and verify the integrity of the files.[/i]
+
+[h3][url=https://github.com/emoryoakley/SmallerGeothermalGenerator/blob/master/README.zh.md]繁體中文說明[/url] | [url=https://github.com/emoryoakley/SmallerGeothermalGenerator/blob/master/README.md]English README[/url][/h3]
+[hr][/hr]
+[h3][b]Introduction:[/b][/h3]
+[preview](./Media/preview.png)  
+[url=./https://github.com/emoryoakley/GeothermalPowerExtendersCompatibilityPack/blob/master/README.zh.md][繁體中文說明][/url] | [url=https://github.com/emoryoakley/GeothermalPowerExtendersCompatibilityPack/blob/master/README.md][English README][/url]
+[hr][/hr]
+[h3][b]Introduction[b][/h3]
+This is a mod that improves [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url]'s compatibility. Now, you can:  
+Build power extenders next to the geothermal generator provided by other mods.  
+Construct power extenders in the diagonal direction of the geothermal generator.  
+[showcase1](./Media/showcase1.gif)  
+The main reason I developed this mod is that while working on a self-made mod - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3456671049]Smaller Geothermal Generator (更小的地熱發電機)[/url], I found it was incompatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url].  
+Since [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url] is widely used by many players, I decided to create a compatibility patch to make it support other geothermal generators.  
+[showcase2](./Media/showcase2.gif)  
+[hr][/hr]
+[h3][b]How to Use[/b][/h3] 
+[olist]
+[*] Subscribe to or download this mod from the release page.  
+[*] Enable this mod in the game. (This mod [b]must[/b] be loaded after [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url].)  
+[*] Go to the mod settings to configure the geothermal generator you want to support and whether it can be constructed diagonally.  
+[*] Use this mod just like [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url] normally.  
+[/olist]
+[showcase3](./Media/showcase3.png)  
+[showcase4](./Media/showcase4.gif)  
+[h3][b]Language[/b][/h3] 
+This mod includes built-in support for:  
+[list]
+[*] Traditional Chinese (繁體中文)
+[*] Simplified Chinese (简体中文)
+[*] English
+[/list]
+Feel free to create and share your own language translation mods to extend compatibility.
+[h3][b]Compatibility[/b][/h3] 
+[list]
+[*] [b]The following mods have been tested, and all of them are compatible with this mod.[/b]
+    [list]
+    [*] Core (Vanilla)  
+    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1409449372]Higher Power[/url]  
+    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3456671049]Smaller Geothermal Generator (更小的地熱發電機)[/url]  
+    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079579039][sd] Advanced Powergeneration (Continued)[/url]  
+    [*] [url=https://steamcommunity.com/workshop/filedetails/?id=2032409628]Advanced Power Plus[/url]  
+    [*] [url=https://steamcommunity.com/workshop/filedetails/?id=2654846754]Vanilla Factions Expanded - Ancients[/url]  
+    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3411401573]Vanilla Quests Expanded - The Generator[/url]  
+    [/list]
+[*] [b]The following mods are still usable and compatible with this mod, even though they haven't been updated to the latest game version, 1.5.[/b] 
+    [list] 
+    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2086966048]Advanced Geothermal Generator[/url]  
+    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541519278]M-13's Geothermal Generators[/url]  
+    [/list]
+[*] [b]The geothermal generators provided by other mods can theoretically be supported, not limited to the ones mentioned above.[/b]  
+[/list]
+[showcase5](./Media/showcase5.png)  
+[h3][b]Other Notes[/b][/h3]
+[list]
+[*] This mod depends on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url].  
+[*] Please load [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885]Geothermal Power Extenders[/url] before loading this mod.  
+[*] For additional details, please refer to the [url=https://github.com/emoryoakley/GeothermalPowerExtendersCompatibilityPack]GitHub repository[/url].
+[/list]</description>
+    <packageId>emoryoakley.geothermalpowerextender.compatibilitypack</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <loadAfter>
+        <li>silkcircuit.geothermalpowerextender</li>
+    </loadAfter>
+    <modDependencies>
+        <li>
+            <packageId>silkcircuit.geothermalpowerextender</packageId>
+            <displayName>Geothermal Power Extender</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3373466885</steamWorkshopUrl>
+            <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885</downloadUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>
