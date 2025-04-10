@@ -20,6 +20,11 @@ namespace GeothermalPowerExtendersCompatibilityPack
         public const string ModSettingFilterButton = "GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button";
 
         /// <summary>
+        /// 讀取清單的按鈕
+        /// </summary>
+        public const string ModSettingLoading = "GeothermalPowerExtendersCompatibilityPack.ModSetting.Loading.Button";
+
+        /// <summary>
         /// 全部選擇的按鈕
         /// </summary>
         public const string ModSettingSelectAll = "GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button";
