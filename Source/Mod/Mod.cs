@@ -77,7 +77,7 @@ namespace GeothermalPowerExtendersCompatibilityPack
             }
 
             // 讀取地熱發電機清單按鈕
-            if (Widgets.ButtonText(reloadButtonRect, Constants.ModSettingLoading))
+            if (Widgets.ButtonText(reloadButtonRect, Constants.ModSettingLoading.TranslateOrFallback()))
             {
                 // 讀取所有地熱發電機
                 Loading();
@@ -87,14 +87,14 @@ namespace GeothermalPowerExtendersCompatibilityPack
             }
 
             // 全部選擇/全部取消按鈕
-            if (Widgets.ButtonText(selectAllButtonRect, selectAll ? Constants.ModSettingDeselectAll.TranslateOrFallback() : Constants.ModSettingSelectAll.TranslateOrFallback()))
+            if (Widgets.ButtonText(selectAllButtonRect, selectAll ? Constants.ModSettingSelectAll.TranslateOrFallback() : Constants.ModSettingDeselectAll.TranslateOrFallback()))
             {
                 CheckAll(selectAll);
                 selectAll = !selectAll;
             }
 
             // 全部展開/全部縮合所有群組的按鈕
-            if (Widgets.ButtonText(expandToggleButtonRect, expandAll ? Constants.ModSettingCollapseAll.TranslateOrFallback() : Constants.ModSettingCollapseAll.TranslateOrFallback()))
+            if (Widgets.ButtonText(expandToggleButtonRect, expandAll ? Constants.ModSettingCollapseAll.TranslateOrFallback() : Constants.ModSettingExpandAll.TranslateOrFallback()))
             {
                 expandAll = !expandAll;
 
@@ -174,6 +174,8 @@ namespace GeothermalPowerExtendersCompatibilityPack
                     listingStandard.Gap();
                 }
             }
+
+            listingStandard.End();
 
             Widgets.EndScrollView();
 
