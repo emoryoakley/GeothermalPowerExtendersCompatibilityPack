@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>地熱擴展器相容性擴展包</GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>
-    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>查詢你想要支援的發電機:(可輸入建築物部分名稱或是模組部分名稱)</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>
-    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>查詢</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>請先按下"讀取清單"，再輸入你想要找得發電機:(可輸入建築物部分名稱或是模組部分名稱)</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>查詢結果</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Loading.Button>讀取清單</GeothermalPowerExtendersCompatibilityPack.ModSetting.Loading.Button>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>全部選擇</GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>全部取消</GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.ExpandAll.Button>全部展開</GeothermalPowerExtendersCompatibilityPack.ModSetting.ExpandAll.Button>

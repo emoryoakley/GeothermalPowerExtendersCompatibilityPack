@@ -1,4 +1,5 @@
 ﻿using CustomTranslator;
+using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,6 +9,11 @@ namespace GeothermalPowerExtendersCompatibilityPack
 {
     public class Mod : Verse.Mod
     {
+        /// <summary>
+        /// 找出RimWorld以及所有模組中，包含地熱發電機的建築物
+        /// </summary>
+        public static Dictionary<string, ExtenderCompaitableGeothermalGenerator> GeothermalGenerators = new Dictionary<string, ExtenderCompaitableGeothermalGenerator>();
+
         /// <summary>
         /// 模組的設定
         /// </summary>
@@ -27,6 +33,11 @@ namespace GeothermalPowerExtendersCompatibilityPack
         /// 用來記錄滾動位置的 Vector2 變數。
         /// </summary>
         private Vector2 scrollPosition;
+
+        /// <summary>
+        /// 用來記錄是否全部選擇或全部取消。
+        /// </summary>
+        private bool selectAll = true;
 
         /// <summary>
         /// 用來記錄是否展開所有群組。
@@ -53,8 +64,8 @@ namespace GeothermalPowerExtendersCompatibilityPack
             Rect searchRect = listingStandard.GetRect(30f);
             Rect searchTextRect = new Rect(searchRect.x, searchRect.y, searchRect.width - 440f, searchRect.height);
             Rect searchButtonRect = new Rect(searchRect.x + searchRect.width - 410f, searchRect.y, 90f, searchRect.height);
-            Rect selectAllButtonRect = new Rect(searchRect.x + searchRect.width - 310f, searchRect.y, 90f, searchRect.height);
-            Rect deselectAllButtonRect = new Rect(searchRect.x + searchRect.width - 210f, searchRect.y, 90f, searchRect.height);
+            Rect reloadButtonRect = new Rect(searchRect.x + searchRect.width - 310f, searchRect.y, 90f, searchRect.height);
+            Rect selectAllButtonRect = new Rect(searchRect.x + searchRect.width - 210f, searchRect.y, 90f, searchRect.height);
             Rect expandToggleButtonRect = new Rect(searchRect.x + searchRect.width - 110f, searchRect.y, 90f, searchRect.height);
 
             searchText = Widgets.TextField(searchTextRect, searchText);
@@ -65,16 +76,21 @@ namespace GeothermalPowerExtendersCompatibilityPack
                 FilterGenerators();
             }
 
-            // 全部選擇按鈕
-            if (Widgets.ButtonText(selectAllButtonRect, Constants.ModSettingSelectAll.TranslateOrFallback()))
+            // 讀取地熱發電機清單按鈕
+            if (Widgets.ButtonText(reloadButtonRect, Constants.ModSettingLoading))
             {
-                CheckAll(true);
+                // 讀取所有地熱發電機
+                Loading();
+                // 清空查詢文字
+                searchText = string.Empty;
+                FilterGenerators();
             }
 
-            // 全部取消按鈕
-            if (Widgets.ButtonText(deselectAllButtonRect, Constants.ModSettingDeselectAll.TranslateOrFallback()))
+            // 全部選擇/全部取消按鈕
+            if (Widgets.ButtonText(selectAllButtonRect, selectAll ? Constants.ModSettingDeselectAll.TranslateOrFallback() : Constants.ModSettingSelectAll.TranslateOrFallback()))
             {
-                CheckAll(false);
+                CheckAll(selectAll);
+                selectAll = !selectAll;
             }
 
             // 全部展開/全部縮合所有群組的按鈕
@@ -91,7 +107,7 @@ namespace GeothermalPowerExtendersCompatibilityPack
             listingStandard.Gap();
 
             // 將同樣 packageId 的物件分作一群
-            var groupedGenerators = Main.GeothermalGenerators.Values.Where(generator => generator.IsShow).GroupBy(generator => generator.PackageId);
+            var groupedGenerators = GeothermalGenerators.Values.Where(generator => generator.IsShow).GroupBy(generator => generator.PackageId);
 
             Rect descriptionRect = new Rect(inRect.x, searchRect.yMax + 12f, inRect.width, 30f);
             int total = groupedGenerators.Sum(group => group.Count());
@@ -159,11 +175,29 @@ namespace GeothermalPowerExtendersCompatibilityPack
                 }
             }
 
-            listingStandard.End();
-
             Widgets.EndScrollView();
 
             listingStandard.End();
+        }
+
+        public void Loading()
+        {
+            if (DefDatabase<ThingDef>.AllDefsListForReading == null)
+            {
+                Log.Message($"[GeothermalPowerExtendersCompatibilityPack] Not ready.");
+            }
+            else
+            {
+                GeothermalGenerators = DefDatabase<ThingDef>.AllDefsListForReading
+                    // 能夠建造在蒸氣間歇泉上的建築物就會認定為是地熱發電機
+                    .Where(def => def.placeWorkers != null && def.placeWorkers.Any(pw => typeof(PlaceWorker_OnSteamGeyser).IsAssignableFrom(pw)))
+                    // 排除掉藍圖與框架類的建築物
+                    .Where(def => !def.defName.StartsWith("Blueprint_") && !def.defName.StartsWith("Frame_"))
+                    .Select(def => new ExtenderCompaitableGeothermalGenerator(def))
+                    .ToDictionary(def => def.DefName, def => def);
+
+                Log.Message($"[GeothermalPowerExtendersCompatibilityPack] Found {GeothermalGenerators.Count} kinds of geothermal generators.");
+            }
         }
 
         private void FilterGenerators()
@@ -171,7 +205,7 @@ namespace GeothermalPowerExtendersCompatibilityPack
             // 篩選出符合查詢文字的地熱發電機
             if (!string.IsNullOrEmpty(searchText))
             {
-                foreach (var pair in Main.GeothermalGenerators)
+                foreach (var pair in GeothermalGenerators)
                 {
                     pair.Value.IsShow = pair.Value.Name.Contains(searchText) || pair.Value.ModName.Contains(searchText);
                 }
@@ -179,7 +213,7 @@ namespace GeothermalPowerExtendersCompatibilityPack
             // 清空查詢文字，顯示全部的地熱發電機
             else
             {
-                foreach (var pair in Main.GeothermalGenerators)
+                foreach (var pair in GeothermalGenerators)
                 {
                     pair.Value.IsShow = true;
                 }
@@ -189,7 +223,7 @@ namespace GeothermalPowerExtendersCompatibilityPack
         private void CheckAll(bool isAllowed)
         {
             // 全部允許/全部取消按鈕邏輯
-            foreach (var pair in Main.GeothermalGenerators)
+            foreach (var pair in GeothermalGenerators)
             {
                 pair.Value.Allowed = isAllowed;
                 Settings.AllowedSet[pair.Value.DefName] = pair.Value;

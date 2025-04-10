@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>Geothermal Extenders Compatibility Pack</GeothermalPowerExtendersCompatibilityPack.ModSetting.Header.Title>
-    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>Search for the generator you want to support: (you can enter part of the building name or the mod name)</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>Please click "Load Items" first, and search for the generator you want to support: (you can enter part of the building name or the mod name)</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Label>
+    <GeothermalPowerExtendersCompatibilityPack.ModSetting.Loading.Button>Load Items</GeothermalPowerExtendersCompatibilityPack.ModSetting.Loading.Button>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>Search</GeothermalPowerExtendersCompatibilityPack.ModSetting.Filter.Button>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>Select All</GeothermalPowerExtendersCompatibilityPack.ModSetting.SelectAll.Button>
     <GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>Deselect All</GeothermalPowerExtendersCompatibilityPack.ModSetting.DeselectAll.Button>
