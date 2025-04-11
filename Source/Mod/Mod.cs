@@ -47,6 +47,8 @@ namespace GeothermalPowerExtendersCompatibilityPack
         public Mod(Verse.ModContentPack content) : base(content)
         {
             Settings = GetSettings<ModSettings>();
+            Settings.ExposeData();
+            Log.Message("[GeothermalPowerExtendersCompatibilityPack] New Mod Instance.");
         }
 
         /// <summary>
