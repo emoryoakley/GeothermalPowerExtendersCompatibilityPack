@@ -48,5 +48,5 @@
 - 此模組依賴於 [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885)。請在載入此模組前，先載入 [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885)。
 
 ## 最新模組版本：
-- 版本：1.5.20250408
-- 相容於 RimWorld 1.5 
+- 版本：1.5.20250410
+- 相容於 RimWorld 1.5
