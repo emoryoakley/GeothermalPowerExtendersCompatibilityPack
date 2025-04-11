@@ -9,7 +9,7 @@ namespace GeothermalPowerExtendersCompatibilityPack
         /// <summary>
         /// 允許 Extender 建築物蓋在周圍的地熱發電機集合。
         /// </summary>
-        public Dictionary<string, ExtenderCompaitableGeothermalGenerator> AllowedSet;
+        public Dictionary<string, ExtenderCompaitableGeothermalGenerator> AllowedSet = new Dictionary<string, ExtenderCompaitableGeothermalGenerator>();
 
         public bool Adjacent8Way = true;
 
@@ -60,6 +60,8 @@ namespace GeothermalPowerExtendersCompatibilityPack
             {
                 AllowedSet = new Dictionary<string, ExtenderCompaitableGeothermalGenerator>();
             }
+
+            Log.Message("[GeothermalPowerExtendersCompatibilityPack] Load or Save Scribe Data.");
         }
     }
 }

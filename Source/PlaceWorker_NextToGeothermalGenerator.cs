@@ -12,7 +12,18 @@ namespace GeothermalPowerExtendersCompatibilityPack
         /// IsAllowed的規則是：
         /// 檢查給定的 ThingDef 是否在相容的地熱發電機列表中，且被設置為允許在周圍建造。
         /// </summary>
-        private static Predicate<ThingDef> IsAllowed = thingDef => Mod.Settings.AllowedSet.ContainsKey(thingDef.defName);
+        private static Predicate<ThingDef> IsAllowed = thingDef =>
+        {
+            if (thingDef == null)
+            {
+                return false;
+            }
+            else if (string.IsNullOrEmpty(thingDef.defName))
+            {
+                return false;
+            }
+            return Mod.Settings.AllowedSet.ContainsKey(thingDef.defName);
+        };
 
         /// <summary>
         /// 取得周圍格子，Mod.Settings.Adjacent8Way 為 true 時，返回所有相鄰(包含斜角)的格子，否則僅返回上下左右的相鄰格子。

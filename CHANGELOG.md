@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.5-20250411
+### Fix Bug
+1. To avoid a NullReferenceException when checking the Power Extender construction logic.
+2. Force call 'ExposeData()' function when mod instance is created.
+3. Add some log info when loading or reading data from 'Scribe system'.
+
 ## Version 1.5-20250410
 ### Fix Bug
 1. Fixed an issue where game data could not be loaded occasionally after the game starts.

@@ -47,5 +47,5 @@ This mod includes built-in support for Traditional Chinese, Simplified Chinese, 
 - This mod depends on [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885). Please load [Geothermal Power Extenders](https://steamcommunity.com/sharedfiles/filedetails/?id=3373466885) before loading this mod. 
 
 ## Latest Mod Version:
-- Version: 1.5.20250410
+- Version: 1.5.20250411
 - Compatible with RimWorld 1.5
